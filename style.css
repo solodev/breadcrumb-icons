@@ -1,0 +1,112 @@
+.row {
+    justify-content: space-between;
+} 
+
+
+/* Navigation Menu */
+
+.menu-hamburger {
+    bottom: calc(50% - 10px);
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-hamburger span {
+    width: 30px;
+    height: 4px;
+    display: block;
+    background: #fafafa;
+    margin-bottom: 4px;
+  }
+  
+  .menu-hamburger span:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  nav {
+    background: #010101;
+    z-index: 3;
+  }
+  
+  nav .navbar-nav li.navbar-item {
+    line-height: 110px;
+    margin-left: -5px;
+  }
+  
+  nav .navbar-nav li.navbar-item a {
+    padding: 0 20px;
+  }
+  
+  /* Media Queries */
+
+  @media (max-width: 991px) {
+    .navbar .row {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    nav.h-navbar {
+      max-height: 70px;
+    }
+  
+    nav .navbar-header img {
+      max-width: 70px;
+    }
+  
+    .menu-hamburger {
+      bottom: calc(50% - 12px);
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    nav.h-navbar {
+      max-height: 90px;
+    }
+} 
+
+/* Breadcrumbs */
+
+.breadcrumbs-container {
+    background-color: #Fafafa; 
+    padding: 3px 0 3px;
+}
+
+@media only screen and (min-width: 480px) {
+
+#page-options a, #page-options div {
+    font-size: 12px;
+    float: left;
+    line-height: 2em;
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+}
+
+@media only screen and (min-width: 480px) {
+#page-options #size-this {
+    background: transparent url(https://raw.githubusercontent.com/solodev/breadcrumb-icons/master/images/page_options.gif) no-repeat 18px 0;
+}
+}
+
+@media only screen and (min-width: 480px) {
+#page-options #print-this {
+    background: transparent url(https://raw.githubusercontent.com/solodev/breadcrumb-icons/master/images/page_options.gif) no-repeat -52px 0;
+}
+}
+
+@media only screen and (min-width: 480px) {
+#page-options #share-this {
+    background: transparent url(https://raw.githubusercontent.com/solodev/breadcrumb-icons/master/images/page_options.gif) no-repeat -105px 0;
+    margin-right: 0;
+}
+}
+
+
+
